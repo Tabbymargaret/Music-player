@@ -20,21 +20,21 @@
                 </div>
             </nav>
             <div class="forYou">
-                <h5>For you my love</h5>
+                <h5>A playlist For you my love</h5>
                 <i class="fa-solid fa-heart"></i>
             </div>
             <img src="image.png" alt="" class="song-img">
-            <h1>I believe I'm fine</h1>
-            <p>Robin Schulz Ft. Hugel</p>
+            <h1 id="songTitle">I believe I'm fine</h1>
+            <p id="songArtist">Robin Schulz Ft. Hugel</p>
             <audio id="song">
                 <source type="audio/mpeg" src="I believe I'm fine.mp3">
             </audio>
             <input type="range" value="0" id="progress">
 
             <div class="controls">
-                <div><i class="fa-solid fa-backward"></i></div>
+                <div><i class="fa-solid fa-backward" id="previousButton"></i></div>
                 <div><i class="fa-solid fa-play" id="ctrlIcon" onclick="playPause()"></i></div>
-                <div><i class="fa-solid fa-forward"></i></div>
+                <div><i class="fa-solid fa-forward" id="nextButton" onclick="nextSong()"></i></div>
             </div>
         </div>
     </div>
